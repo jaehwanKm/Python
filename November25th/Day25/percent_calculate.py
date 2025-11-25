@@ -4,11 +4,7 @@ now = time.localtime()
 timestamp = time.strftime("%Y-%m-%d %H:%M:%S", now)
 print(timestamp)
 
-FILE_PRICE = "D:/Project/PythonGit/Python/November25th/Day25/crypto_price.txt"
-
-#with open(FILE_PRICE,"r", encoding="utf-8") as f:
-#    data= f.read()
-#    print(data)
+FILE_PRICE = "crypto_price.txt"
 
 def Calculate():
     total_price = float(input("total price :"))
