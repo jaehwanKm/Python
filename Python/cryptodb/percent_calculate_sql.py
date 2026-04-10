@@ -3,7 +3,6 @@ import time
 
 DB_NAME = "crypto.db"
 
-# DB 초기화
 def init_db():
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
@@ -75,7 +74,6 @@ def show_history():
     conn.close()
 
 
-# 실행 흐름
 init_db()
 
 timestamp = get_timestamp()
